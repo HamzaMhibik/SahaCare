@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.org/fxml" fx:controller="com.example.demo.controller.CalendrierController">
+    <Label text="Calendrier"/>
+    <GridPane fx:id="calendarGrid" hgap="10" vgap="10">
+        <!-- Les jours de la semaine -->
+        <Label text="Lun" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+        <Label text="Mar" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+        <Label text="Mer" GridPane.columnIndex="2" GridPane.rowIndex="0"/>
+        <Label text="Jeu" GridPane.columnIndex="3" GridPane.rowIndex="0"/>
+        <Label text="Ven" GridPane.columnIndex="4" GridPane.rowIndex="0"/>
+        <Label text="Sam" GridPane.columnIndex="5" GridPane.rowIndex="0"/>
+        <Label text="Dim" GridPane.columnIndex="6" GridPane.rowIndex="0"/>
+    </GridPane>
+    <Button text="+ Ajouter rendez-vous" onAction="#addAppointment"/>
+</VBox>
